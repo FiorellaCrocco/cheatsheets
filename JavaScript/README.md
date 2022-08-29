@@ -1,11 +1,19 @@
 ## Apuntes de JavaScript y cheatsheets
 
 **1** ACLARACIONES
+
 **2** VARIABLES
+
 **3** OPERADORES
+
 **4** FUNCIONES
+
 **5** CONDICIONALES
+
 **6** LOOPS
+
 **7** ARRAYS
+
 **8** PROPIEDADES Y MÉTODOS: ARRAYS / STRINGS
+
 **9** OBJETOS LITERALES

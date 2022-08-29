@@ -21,11 +21,17 @@ El alcance o scope de las funciones y variables se define por { }
 
 *EJEMPLO:*
 scope 1
+
 function{
+
     scope 2
+
     code{
+
         scope 3
+
     }
+    
 }
 
 ### 3) RETURN 
