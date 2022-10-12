@@ -147,7 +147,9 @@ console.log("La edad del perro es " + edadPerro(5));
 
 ```
 
-*Aclaración de la estructura de la arrow*
+Aclaración de la estructura de la arrow
+```
 definirVariable nombreVariable = parametro => loQueQuieroHagaLaFuncion
       let           edadPerro   =  numero   => numero * 7;
+```
 
