@@ -45,7 +45,7 @@ let vuelta = 1
 
 while(vuelta <= 5) {
   console.log('Dando la vuelta número ' + vuelta);
-  vuelta++ //al final de cada vuelta sumara 1 a vuelta, asi no quedamos en un loop infinito.
+  vuelta++ // Al final de cada vuelta sumara 1 a vuelta, asi no quedamos en un loop infinito.
 };
 ```
 
@@ -57,7 +57,7 @@ Definimos variable:
 
 ```
 do{
-    //código que se ejecutará en cada repetición
+    // Código que se ejecutará en cada repetición
     // Hace algo para que la condición eventualmente se deje de cumplir
 } while (condicion); 
 ```
@@ -72,7 +72,7 @@ let vuelta = 5
 
 do{
   console.log('Dando la vuelta número ' + vuelta);
-  vuelta++ //Se suma 1 a vuelta por lo tanto vuelta = 6
-} while(vuelta <= 5); //al vuelta ser 6 la condición retorna false y se termina el bloque de código
+  vuelta++ // Se suma 1 a vuelta por lo tanto vuelta = 6
+} while(vuelta <= 5); // Al vuelta ser 6 la condición retorna false y se termina el bloque de código
 
 ```
