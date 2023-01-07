@@ -9,6 +9,7 @@
 
 **ESTRUCTURA:**
 
+```
 let auto = {
   	patente : 'AC 134 DD', 
     anio: 2022
@@ -18,3 +19,4 @@ variable nombreObjetoLiteral = {
   	propiedad1 : 'valorStrings', 
     propiedad2: valorNumerico
 };
+```

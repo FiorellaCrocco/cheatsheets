@@ -4,6 +4,7 @@ Estos nos ayudan a encontrar elementos dentro de un array.
 **LINEAR SEARCH**
 Busca elemento por elemento, uno por vez y no para hasta encontrar el valor deseado.
 
+```
 function search(arr, n, x)
 {
     let i;
@@ -12,9 +13,10 @@ function search(arr, n, x)
             return i;
     return -1;
 }
+```
 
 **BINARY SEARCH**
-
+```
 Lo primero que vamos a hacer para escribir este algoritmo, es crear una función que nos permita tomar dos parámetros: 
 La lista sobre la que vamos a buscar y el elemento que vamos a buscar.
 
@@ -52,6 +54,7 @@ const binarySearch = (list, item) => {
 let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 let buscar = 1;
 console.log(binarySearch(list, buscar));
+```
 
 *El código anterior nos indica que:*
 Si el número de la mitad es el que estamos buscando, retornarlo.

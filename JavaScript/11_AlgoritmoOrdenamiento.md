@@ -7,7 +7,7 @@ Lo podemos utilizar tanto para ordenar arrays como objetos literales.
 **ARRAY DE NUMEROS**
 
 - APLICADO PARA ORDENAR DE FORMA ASCENDENTE
-
+```
 let numeros = [12,1,3,15,7];
 
 let bubbleSortAsc = array => {  
@@ -26,9 +26,9 @@ let bubbleSortAsc = array => {
 console.log("************ ORDEN ASC NUMEROS ************");
 bubbleSortAsc(numeros);
 console.log(numeros);
-
+```
 - APLICADO PARA ORDENAR DE FORMA DESCENDENTE
-
+```
 let numeros1 = [12,1,3,15,7];
 
 let bubbleSortDesc = array => {  
@@ -47,28 +47,28 @@ let bubbleSortDesc = array => {
 console.log("************ ORDEN DESC NUMEROS ************");
 bubbleSortDesc(numeros1);
 console.log(numeros1);
-
+```
 
 **ARRAY DE LETRAS**
 
 - APLICADO PARA ORDENAR DE FORMA ASCENDENTE
-
+```
 let letras = ["c","f","t","b","g"];
 
 console.log("************ ORDEN ASC LETRRAS ************");
 bubbleSortAsc(letras);
 console.log(letras);
-
+```
 - APLICADO PARA ORDENAR DE FORMA DESCENDENTE
-
+```
 let letras1 = ["c","f","t","b","g"];
 
 console.log("************ ORDEN DESC LETRAS ************");
 bubbleSortDesc(letras1);
 console.log(letras1);
-
+```
 **ARRAY DE OBJETOS LITERALES**
-
+```
 const arrayCuentas = [
     {
         titular: "Arlene Barr",
@@ -93,11 +93,11 @@ const arrayCuentas = [
     }
 ]
 
-
+```
 - APLICADO PARA ORDENAR UN ARRAY DE OBJETO LITERAL DE FORMA ASCENDENTE 
 
 _SEGUN VALOR DE LA PROPIEDAD SALDO (NUMERICO)_
-
+```
 let bubbleSortObjAsc = (array) => {  
     let aux;
     for (let i = 0; i < array.length; i++) {     
@@ -114,10 +114,12 @@ let bubbleSortObjAsc = (array) => {
 console.log("************ ORDEN ASC ARRAY DE OBJETO LITERAL - SALDO ************");
 bubbleSortObjAsc(arrayCuentas);
 console.log(arrayCuentas);
+```
 
 - APLICADO PARA ORDENAR UN ARRAY DE OBJETO LITERAL DE FORMA DESCENDENTE 
 _SEGUN VALOR DE LA PROPIEDAD TITULAR (STRING)_
 
+```
 let bubbleSortObjDesc = (array) => {  
     let aux;
     for (let i = 0; i < array.length; i++) {     
@@ -134,9 +136,11 @@ let bubbleSortObjDesc = (array) => {
 console.log("************ ORDEN DESC ARRAY DE OBJETO LITERAL - TITULAR ************");
 bubbleSortObjDesc(arrayCuentas);
 console.log(arrayCuentas);
+```
 
 - APLICADO PARA ORDENAR UN ARRAY DE OBJETO LITERAL DE FORMA ASCENDENTE E INDICANDO A QUE PROPIEDAD ACCEDER PARA ORDENAR (funcion generica de ordenamiento asc)
 
+```
 const arrayCuentasGen = [
     {
         titular: "Arlene Barr",
@@ -160,7 +164,9 @@ const arrayCuentasGen = [
         tipoCuenta: "corriente"
     }
 ]
+```
 
+```
 let bubbleSortObjAscGen = (array, prop) => {  
     let aux;
     for (let i = 0; i < array.length; i++) {     
@@ -177,10 +183,11 @@ let bubbleSortObjAscGen = (array, prop) => {
 console.log("*** ORDEN ASC ARRAY DE OBJETO LITERAL - PROP. INDICADA / EDAD ***");
 bubbleSortObjAscGen(arrayCuentasGen, "edadTitular");
 console.log(arrayCuentasGen);
-
+```
 
 - APLICADO PARA ORDENAR UN ARRAY DE OBJETO LITERAL DE FORMA DESCENDENTE E INDICANDO A QUE PROPIEDAD ACCEDER PARA ORDENAR (funcion generica de ordenamiento desc)
 
+```
 let bubbleSortObjDescGen = (array, prop) => {  
     let aux;
     for (let i = 0; i < array.length; i++) {     
@@ -197,9 +204,11 @@ let bubbleSortObjDescGen = (array, prop) => {
 console.log("*** ORDEN DESC ARRAY DE OBJETO LITERAL - PROP. INDICADA / EDAD ***");
 bubbleSortObjDescGen(arrayCuentasGen1, "edadTitular");
 console.log(arrayCuentasGen1);
+```
 
 - APLICADO PARA ORDENAR UN ARRAY DE OBJETO LITERAL DE FORMA ASCENDENTE O DESCENDENTE SEGUN EL USUARIO INDICA COMO ORDENAR (funcion generica de ordenamiento segun criterio asc o desc)
 
+```
 const person = 
 [
     {
@@ -228,6 +237,9 @@ const person =
     }
 ]
 
+```
+
+```
 const ordenar = (array, orden) => {
     let aux = [];
     if (orden === "Ascendente" || orden === "ascendente") {
@@ -256,4 +268,4 @@ const ordenar = (array, orden) => {
 console.table(person); 
 ordenar(person, "Ascendente")
 console.table(person);
-
+```

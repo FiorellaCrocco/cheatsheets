@@ -6,7 +6,7 @@ Es una estructura de datos que almacena datos de forma bidimensional. Es decir, 
 Tenemos 4 posibles formas de hacerlo: Recorrer solo una fila, solo una columna, recorrerla por filas o recorrerla por columnas.
 
 **ESTRUCTURA**
-
+```
 let matrix = [
 *columna:  0   1   2   3   4   5   6   7*
           [14, 12, 17, 41, 55, 13, 40, 3], // *0  = 1er fila*
@@ -14,7 +14,7 @@ let matrix = [
           [13, 22, 13, 32, 51, 11, 42, 1], // *2  = 3er fila*
           [12, 61, 18, 23, 52, 10, 43, 5], // *3  = 4ta fila*
 ];
-
+```
 **ES IMPORTANTE RECORDAR:**
  Para acceder a una ubicacion en una matriz debemos indicar: **MATRIZ[fila][columna]**.
  Considerar que si piden la SEGUNDA FILA va ser el indice 1 -> Ej.: MATRIZ[1][columna].
@@ -36,7 +36,7 @@ let matrix = [
 **1 - RECORRER UNA FILA**
 
 - En caso de que nos indiquen la fila a recorrer --> Ej.: Segunda fila -> [55, 16, 61, 23, 50, 12, 41, 2]
-
+```
 let valoresFila = (array) => {
     valores=[];
     for (let i = 0; i < array[1].length; i++) { // si no ponemos array[numFila] nos va devolver menos valores (los de la cantidad de filas que haya)
@@ -47,9 +47,9 @@ let valoresFila = (array) => {
 
 let segundaFila = valoresFila(matrix);
 console.log(segundaFila);
-
+```
 - En caso de que el usuario sea quien ingrese el N° de fila
-
+```
 const recorrerFila = (matriz, fila) => {
     for (let i = 0; i < matriz.length; i++) {       
         matriz[fila][i];
@@ -57,11 +57,11 @@ const recorrerFila = (matriz, fila) => {
 }
 
 recorrerFila(matrix, columna);
-
+```
 **2 - RECORRER UNA COLUMNA**
 
 - En caso de que nos indiquen la columna a recorrer --> Ej.: Tercera columna --> [17, 61, 13, 18]
-
+```
 let valoresColumna = (array) => {
     for (let i = 0; i < array.length; i++) {
         valores.push(array[i][2])
@@ -71,9 +71,9 @@ let valoresColumna = (array) => {
 
 let tercerColumna = valoresColumna(matrix);
 console.log(tercerColumna);
-
+```
 - En caso de que el usuario sea quien ingrese el N° de columna
-
+```
 const recorrerColumna = (matriz, columna) => {
     for (let i = 0; i < matriz.length; i++) {       
         matriz[i][columna]
@@ -81,11 +81,11 @@ const recorrerColumna = (matriz, columna) => {
 }
 
 recorrerColumna(matriz, columna);
-
+```
 **3 - RECORRER DIAGONAL PRINCIPAL**
 
 Ejemplo para comprender que es la diagonal principal
-
+```
 let matrix2 = [
     [14, 12, 17, 41], // 0
     [55, 16, 61, 23], // 1
@@ -105,18 +105,20 @@ const diagonalPrincipal = matriz => {
 
 let diagPrincipal = diagonalPrincipal(matrix2);
 console.log( diagPrincipal )
+```
 
 *** RECORRER DIAGONAL SECUNDARIA ***
 
 - Ejemplo para comprender que es la diagonal secundaria
-
+```
 let matrix2 = [
     [14, 12, 17, 41], // 0
     [55, 16, 61, 23], // 1
     [13, 22, 13, 32], // 2
     [12, 61, 18, 23], // 3
 ]
-
+```
+```
 let DIAGONAL_SECUNDARIA = [41,61,22,12];
 //(fila)(columna)
 //  i  j
@@ -140,9 +142,10 @@ const diagonalSecundaria = matriz => {
 
 let diagSecundaria = recorrerDiagonalSecundaria(matrix2);
 console.log( diagSecundaria )
+```
 
 **CREAR MATRIZ**
-
+```
 const generarMatriz = (filas, columna) => {
     let matriz = [];
     let cont = 1;
@@ -158,3 +161,4 @@ const generarMatriz = (filas, columna) => {
 
 let matGenerada = generarMatriz(4,8);
 console.table(matGenerada);
+```
